@@ -1,0 +1,522 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 13px;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.clr {
+    clear: both;
+}
+
+LI {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header section*/
+header {
+    width: 100%;
+    min-height: 7vh;
+    background-color: #000;
+
+}
+
+.hero {
+    width: 70%;
+    min-height: 7vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-logo {
+    width: 20%;
+}
+
+.hero-logo:hover h1 {
+    color: crimson;
+    transition: .3s;
+}
+
+.hero-logo h1 {
+    font-size: 1.5rem;
+    color: white;
+    line-height: 2rem;
+    display: inline-block;
+}
+
+.hero-logo span {
+    font-size: 1.5rem;
+    color: crimson;
+}
+
+.hero-list {
+    width: 50%;
+}
+
+.hero-list a {
+    color: white;
+    margin: 0 1rem;
+    font-size: .8rem;
+    text-transform: uppercase;
+
+}
+
+.hero-list a:hover {
+    color: crimson;
+    transition: .3s;
+
+
+}
+
+.hero-tel {
+    width: 30%;
+}
+
+.hero-tel h1 {
+    color: white;
+    font-size: 1.3rem;
+}
+
+.hero-tel h1 span {
+    color: rgb(68, 67, 148);
+    font-size: 1.3rem;
+}
+
+/*  end Header section*/
+/*Asosiy section*/
+#Main-section {
+    width: 100%;
+    min-height: 80vh;
+    background-image: url(./pexels-photo-1212984.webp);
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    position: relative;
+}
+
+#Main-section::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    position: absolute;
+    opacity: .8;
+
+}
+
+
+.Asosiy-section {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-info h1 {
+    width: fit-content;
+    font-weight: 800;
+    line-height: 4rem;
+    font-size: 2.5rem;
+    position: relative;
+    color: transparent;
+    animation: main-name 1s ease forwards;
+}
+
+.main-info h1:nth-child(1) {
+    animation-delay: 1.5s;
+}
+
+.main-info h1:nth-child(2) {
+    animation-delay: 2.5s;
+}
+
+.main-info h1:nth-child(3) {
+
+    animation: main-crimson-name 1s ease forwards;
+    animation-delay: 3.5s;
+}
+
+.main-info h1:nth-child(4) {
+
+    animation: main-crimson-name .5s ease forwards;
+    animation-delay: 4.5s;
+}
+
+.main-info h1 span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: crimson;
+    animation: main-span 1s ease;
+    animation-delay: .3s;
+}
+
+.main-info h1:nth-child(1) span {
+    animation-delay: 1s;
+}
+
+.main-info h1:nth-child(2) span {
+    animation-delay: 2s;
+}
+
+.main-info h1:nth-child(3) span {
+    animation-delay: 3s;
+}
+
+.main-info h1:nth-child(4) span {
+    animation-delay: 4s;
+}
+
+.main-title a {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 800;
+    border: .3rem solid crimson;
+    border-radius: 1rem;
+    padding: 1rem 3rem;
+}
+
+.main-title a:hover {
+    background-color: crimson;
+    transition: .3s;
+}
+
+/* End Asosiy section*/
+
+/*portfolio section*/
+#portfolio {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(./pexels-photo-3756681.webp);
+    background-size: cover;
+    background-position: left;
+}
+
+#portfolio>h1 {
+    font-size: 3rem;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+#portfolio>h1:hover {
+    color: crimson;
+    transition: .3s;
+}
+
+#portfolio>h1 span {
+    color: crimson;
+}
+
+.portfolio-info {
+    width: 30%;
+    margin: 0 1%;
+    float: left;
+    margin-bottom: 2rem;
+    padding: 3rem;
+    text-align: center;
+    background-color: #000;
+    border-radius: 1rem;
+}
+
+.portfolio-background1:hover {
+    background-color: green;
+    transition: .3s;
+}
+
+.portfolio-background2:hover {
+    background-color: rgb(215, 33, 231);
+    transition: .3s;
+
+}
+
+.portfolio-background3:hover {
+    background-color: rgb(22, 25, 194);
+    transition: .3s;
+
+}
+
+
+
+.portfolio-info:hover img {
+    transform: scale(1.3);
+    transition: 1s;
+}
+
+.portfolio-info:hover h2,
+.portfolio-info:hover p {
+    transition: .3s;
+    color: black;
+}
+
+.portfolio-info:hover a {
+    transition: .3s;
+    padding: .5rem;
+    font-size: 1.15rem;
+    color: crimson;
+    font-weight: 700;
+    border-bottom: 3px solid crimson;
+}
+
+
+.portfolio-info img {
+    width: 8rem;
+}
+
+.portfolio-info h2 {
+    font-size: 2.1rem;
+    color: white;
+    margin: 2rem;
+}
+
+.portfolio-info p {
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    letter-spacing: .1rem;
+    color: white;
+    font-weight: 100;
+}
+
+.portfolio-info a {
+    padding: .5rem 0;
+    font-size: 1rem;
+    letter-spacing: .1rem;
+    color: white;
+    position: relative;
+    border-bottom: .3rem solid white;
+}
+
+/* end portfolio section*/
+/*rezyume*/
+#rezume {
+    max-width: 100%;
+    min-height: 70vh;
+    background: linear-gradient(to right, rgb(95, 121, 179), rgb(93, 103, 190), rgb(65, 65, 173), rgb(70, 100, 201));
+    position: relative;
+    z-index: -2;
+    overflow: hidden;
+}
+
+#rezume>h1 {
+    padding: 4rem 0;
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+}
+
+
+#rezume h1 span {
+    color: crimson;
+}
+
+#rezume .rezume-backc1 {
+    width: 25rem;
+    height: 25rem;
+    top: 20vh;
+    left: 10%;
+    border-radius: 50%;
+    background-color: rgb(86, 99, 211);
+    position: absolute;
+    z-index: -1;
+
+}
+
+#rezume .rezume-backc2 {
+    width: 20rem;
+    height: 20rem;
+    top: 130vh;
+    right: 50%;
+    border-radius: 50%;
+    background-color: rgb(68, 78, 216);
+    position: absolute;
+    z-index: -1;
+
+}
+
+#rezume .rezume-backc3 {
+    width: 35rem;
+    height: 35rem;
+    top: 40vh;
+    right: -20%;
+    border-radius: 50%;
+    background-color: rgb(62, 77, 163);
+    position: absolute;
+    z-index: -1;
+
+}
+
+.rezume-info {
+    width: 100%;
+    min-height: 1vh;
+    margin: 4rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rezume-info h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    width: 50%;
+    color: white;
+}
+
+.rezume-info h2 {
+    font-size: 1.3;
+    font-weight: 300;
+    width: 50%;
+    color: white;
+    line-height: 3rem;
+
+}
+
+/* endnrezyume*/
+/* Keyframes*/
+@keyframes main-span {
+
+
+    50% {
+        width: 100%;
+        left: 0;
+
+
+
+    }
+
+    100% {
+        left: 100%;
+        width: 0;
+    }
+}
+
+@keyframes main-name {
+
+    100% {
+        color: white;
+    }
+}
+
+@keyframes main-crimson-name {
+    100% {
+        color: crimson;
+    }
+}
+
+
+
+@media only screen and (max-width:1500px) {
+    html {
+        font-size: 12px;
+    }
+    .hero{
+        height: 12vh;
+    }
+    #portfolio {
+        min-height: 85vh;
+    }
+
+    .portfolio-info {
+        min-height: 60vh;
+    }
+}
+
+@media only screen and (max-width:1200px) {
+    html {
+        font-size: 10px;
+    }
+    .hero{
+        height: 11vh;
+    }
+
+    #portfolio {
+        min-height: 80vh;
+    }
+
+    .portfolio-info {
+        min-height: 60vh;
+    }
+}
+
+
+@media only screen and (max-width:900px) {
+    html {
+        font-size: 10px;
+    }
+    
+.hero{
+    height: 8vh;
+}
+
+    #portfolio {
+        min-height: 80vh;
+    }
+
+    .portfolio-info {
+        min-height: 60vh;
+    }
+
+
+}
+
+@media only screen and (max-width:800px) {
+    html {
+        font-size: 7px;
+    }
+
+    #portfolio {
+        min-height: 100vh;
+    }
+
+    .portfolio-info {
+        width: 100%;
+        min-height:10vh;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    html {
+        font-size: 6px;
+    }
+
+    #portfolio {
+        max-height: 50vh;
+    }
+
+    .portfolio-info {
+        min-height: 22vh;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    html {
+        font-size: 4px;
+    }
+
+    #portfolio {
+        min-height: 70vh;
+    }
+
+    .portfolio-info {
+        min-height: 10vh;
+    }
+}
